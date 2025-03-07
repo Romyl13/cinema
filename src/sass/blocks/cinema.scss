@@ -1,0 +1,115 @@
+.cinema {
+    padding-top: 51px;
+    .cinema__wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+
+        .cinema__novelty {
+            margin-top: 51px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 166.5%;
+            color: $white-50;
+            width: 200px;
+            height: 71px;
+            border: 1px solid $white-50;
+            border-radius: 13px;
+            align-self: center;
+            justify-self: center;
+        }
+        
+        .cinema__navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .cinema__title {
+            font-size: 65px;
+            font-weight: 900;
+            line-height: 83px;
+            color: $white-50;
+        }
+
+            .cinema__nav {
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    column-gap: 40px;
+
+                    a {
+                        color: $white-50;
+                        opacity: 0.35;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 22px;
+                    }
+            }
+        }
+
+        .cinema__devider {
+            background-color: $white-50;
+            height: 1px;
+            width: 52px;
+        }
+
+        .cinema__films {
+            padding-top: 63px;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 25px;
+            align-items: center;
+            justify-items: center;
+            
+            .cinema__name {
+                display: block;
+                margin-top: 8px;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                color: $white-50;
+                word-wrap: break-word;
+            }
+
+            .cinema__ganre {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 18px;
+                color: $yellow-500;
+            }
+
+            .cinema__films-item {
+                position: relative;
+                width: 340px;
+                height: auto;
+                .cinema__img {
+                    border-radius: 10px;
+                    object-fit: cover;
+                    width: 340px;
+                    height: 463px;
+                }
+            }
+
+            .cinema__rating {
+                display: flex;
+                position: absolute;
+                width: 62px;
+                height: 33px;
+                background-color: $green-400;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                color: $white-50;
+                border-radius: 5px;
+                margin: 13px;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}

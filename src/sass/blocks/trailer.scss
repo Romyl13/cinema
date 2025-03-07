@@ -1,0 +1,64 @@
+.trailer {
+    margin-top: 54px;
+
+    .trailer__all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .trailer__title {
+            font-size: 65px;
+            font-weight: 900;
+            line-height: 83px;
+            color: $white-50;
+        }
+        .trailer__text {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 27px;
+            color: $white-50;
+        }
+
+    }
+
+    .trailer__img-film {
+        margin-top: 79px;
+        position: relative;
+        .trailer__img {
+            border-radius: 11px;
+        }
+        .trailer__img-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% 50%);
+        }
+    }
+
+    .trailer__detail {
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .trailer__blocks {
+        display: grid;
+        grid-template-columns: 210px 180px;
+        align-items: center;
+        justify-items: center;
+        column-gap: 34px;
+
+        .trailer__social {
+            display: flex;
+            column-gap: 33px;
+        }
+    }
+
+    .trailer__name {
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 57px;
+        color: $white-50;
+    }
+}

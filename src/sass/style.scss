@@ -34,14 +34,11 @@
   font-family: 'Qanelas', sans-serif;
 }
 
-body {
-    background-color: #1B2133;
-    opacity: 0.93;
-}
-
-.main {
-    background: url('../../assets/img/joker.webp') no-repeat center center/cover;
-    height: 100vh;
+.wrapper {
+  background: url('../assets/img/joker.webp') no-repeat;
+  background-color: #1B2133;
+  background-position: center calc(0% - 91px);
+  position: relative;
 }
 
 .container {
@@ -62,6 +59,22 @@ body {
   clip-path: inset(50%);
   overflow: hidden;
 }
+
+.scroll-to-top {
+  position: absolute;
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 73px;
+  height: 73px;
+  background-color: $black-900;
+  top: 0;
+  right: 0;
+  margin: 911px 51px 0 0;
+  border-radius: 10px;
+}
+
+
 
 @import 'blocks/header';
 @import 'blocks/cinema';

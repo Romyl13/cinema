@@ -1,4 +1,11 @@
 {
+  "name": "cinema",
+  "version": "1.0.0",
+  "description": "Project cinema",
+  "scripts": {
+    "start": "gulp", 
+    "dev": "gulp"
+  },
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "gulp": "^5.0.0",
