@@ -1,0 +1,68 @@
+@import './reset/reset.css';
+
+@import 'base/mixins';
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url("../assets/fonts/Qanelas-Regular.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url('../assets/fonts/Qanelas-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url('../assets/fonts/Qanelas-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url('../assets/fonts/Qanelas-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+  font-family: 'Qanelas', sans-serif;
+}
+
+body {
+    background-color: #1B2133;
+    opacity: 0.93;
+}
+
+.main {
+    background: url('../../assets/img/joker.webp') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.container {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+@import 'blocks/header';
+@import 'blocks/cinema';
+@import 'blocks/trailer';
