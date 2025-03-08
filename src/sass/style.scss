@@ -36,7 +36,7 @@
 
 .wrapper {
   background: url('../assets/img/joker.webp') no-repeat;
-  background-color: #1B2133;
+  background-color: #1E2538;
   background-position: center calc(0% - 91px);
   position: relative;
 }
@@ -79,3 +79,4 @@
 @import 'blocks/header';
 @import 'blocks/cinema';
 @import 'blocks/trailer';
+@import 'blocks/popular';

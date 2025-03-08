@@ -31,7 +31,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50% 50%);
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -61,4 +61,92 @@
         line-height: 57px;
         color: $white-50;
     }
+
+    .trailer__rating {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8px;
+
+        .trailer__like {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            row-gap: 8px;
+
+            .trailer__like-btn {
+                width: 59px;
+                height: 59px;
+                border-radius: 10px;
+                background-color: $blue-900;
+                padding-bottom: 9px;
+            }
+        }
+
+        .trailer__dislike {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            row-gap: 8px;
+            
+            .trailer__dis-btn {
+                width: 59px;
+                height: 59px;
+                border-radius: 10px;
+                background-color: $blue-900;
+                transform: rotate(180deg);
+                padding-bottom: 8px;
+            }
+        }
+
+        .trailer__text-rating {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 18px;
+            color: $white-50;
+        }
+    }
+
+    .trailer__slider {
+        margin-top: 24px;
+        background-color: $black-600;
+        border-radius: 10px;
+        width: 100%;
+        height: 7px;
+
+        .trailer__slider-touch {
+            background-color: $blue-500;
+            border-radius: 10px;
+            width: 422px;
+            height: 7px;
+            margin-left: 77px;
+        }
+    }
+
+    .trailer__films {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        column-gap: 20px;
+
+        .trailer__item-film {
+            display: grid;
+            row-gap: 8px;
+        }
+
+        .trailer__name-img {
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 25px;
+            color: $white-50;
+        }
+
+    
+    }
+    
 }
