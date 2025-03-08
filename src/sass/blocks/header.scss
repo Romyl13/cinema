@@ -59,3 +59,19 @@
         }
     }
 }
+
+
+@media (max-width: 1300px) {
+    .container {
+      padding: 5px;
+      font-size: 850px;
+      .header__logo-social {
+        order: 1;
+      }
+
+      .header__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
