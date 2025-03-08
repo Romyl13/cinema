@@ -1,11 +1,139 @@
 .person{
+    margin-top: 65px;
     .person__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 63px;
+
         .person__popular-person {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
             .person__title {
                 color: $white-50;
                 font-size: 40px;
                 font-weight: 900;
                 line-height: 51px;
+            }
+
+            .person__date {
+                color: $gray-500;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 43px;
+            }
+        }
+
+        .person__actors-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 23px;
+
+            .person__item-first {
+                position: relative;
+                border-radius: 10px;
+            }
+
+            .person__item-second {
+                position: relative;
+                border-radius: 10px;
+            }
+
+            .person__place  {
+                position: absolute;
+                top: 0;
+                margin: 12px 0 0 16px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 20px;
+                color: $yellow-500;
+            }
+
+            .person__old {
+                position: absolute;
+                bottom: 0;
+                margin: 0 0 36px 37px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 20px;
+                color: $yellow-500;
+            }
+
+            .person__title {
+                position: absolute;
+                bottom: 0;
+                margin: 0 0 88px 36px;
+                color: $white-50;
+                font-size: 27px;
+                font-weight: 700;
+                line-height: 33px;
+            }
+
+            .person__text {
+                position: absolute;
+                bottom: 0;
+                margin: 0 0 61px 36px;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                color: $white-50;
+                opacity: 0.35;
+            }
+
+            .person__item-last {
+                height: auto;
+                background-color: $black-600;
+                padding: 29px 29px 36px 30px;
+                border-radius: 10px;
+
+                .person__people-top {
+                    width: 440px;
+                    height: 90px;
+                    display: grid;
+                    grid-template-columns: 4fr 2fr;
+                    align-items: center;
+                    justify-items: space-between;
+
+                    .person__name-actor {
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 25px;
+                        color: $white-50;
+                    }
+
+                    .person__eng-name {
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 18px;
+                        color: $blue-700;
+                    }
+
+                    .person__place-item {
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 18px;
+                        color: $yellow-500;
+                        justify-self: end;
+                    }
+
+                    .person__old-item {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        color: $yellow-500;
+                    }
+                }
+
+                .person__devider {
+                    min-width: 100%;
+                    border: 1px solid $black-300;
+                }
             }
         }
     }
