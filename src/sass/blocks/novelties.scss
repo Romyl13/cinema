@@ -5,6 +5,185 @@
         .novelties__wrapper {
             color: $white-50;
             padding-top: 49px;
+            .novelties__wrapper-item {
+                padding-top: 105px;
+                .novelties__navigation {
+                    display: grid;
+                    grid-template-columns: 0.31fr 0.18fr 0.29fr 0.22fr;
+                    grid-template-rows: 1fr;
+                    align-items: center;
+                    justify-content: space-between;
+                    .novelties__title {
+                        font-size: 65px;
+                        font-weight: 900;
+                        line-height: 83px;
+                        align-self: center;
+                    }
+                    .novelties__text_small {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        align-self: center;
+                        align-self: center;
+                    }
+                    .novelties__devider {
+                        border: 2px solid $white-50;
+                        width: 52px;
+                        justify-self: center;
+                    }
+                    .novelties__nav {
+                        display: flex;
+                        column-gap: 33px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        justify-self: end;
+                        a {
+                            color: $gray-500;
+                        }
+                    }
+                }
+                .novelties__fees {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 62px;
+                    .novelties__fees-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        column-gap: 10px;
+                        .novelties__fees-img {
+                            height: 141px;
+                        }
+                        .novelties__fees-wrapper {
+                            display: grid;
+                            align-items: center;
+                            row-gap: 6px;
+                            width: 256px;
+                            .novelties__fees-name {
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 22px;
+                            }
+                            .novelties__fees-money {
+                                color: $yellow-500;
+                                font-size: 15px;
+                                font-weight: 500;
+                                line-height: 18px;
+                            }
+                            .novelties__fees-earn {
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                                color: $gray-500;
+                            }
+                        }
+                    }
+                }
+            }
+            .novelties__wrapper-form {
+                margin-top: 95px;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                border-radius: 10px;
+                background: 
+                    linear-gradient(rgba(29, 58, 160, 0.9), rgba(29, 58, 160, 0.9)), 
+                    url('../../assets/img/cosmos.png') center center/cover no-repeat;
+                form {
+                    margin-top: 34px;
+                    padding-bottom: 106px;
+                }
+                .novelties__logo {
+                    font-size: 25px;
+                    font-weight: 800;
+                    line-height: 31px;
+                    padding-top: 76px;
+                }
+                .novelties__advertisement {
+                    font-size: 50px;
+                    font-weight: 900;
+                    line-height: 64px;
+                    padding-top: 53px;
+                }
+                .novelties__subtitle {
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 1.4;
+                    padding-top: 23px;
+                    text-align: center;
+                }
+                .novelties__email {
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: $gray-500;
+                    padding: 22px 187px 21px 27px;
+                    background-color: $white-50;
+                    border-radius: 10px;
+                }
+                .novelties__subscribe-btn {
+                    padding: 21px 38px;
+                    border-radius: 10px;
+                    background-color: $yellow-500;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 1.6;    
+                    color: $black-700;     
+                }
+                .novelties__policy {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 10px;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 1.4%;
+                    margin-top: 22px;
+                    label {
+                        color: $white-50;
+                    }
+                    #policy {
+                        border-radius: 2px;
+                    }
+                    input[type="checkbox"] {
+                        appearance: none;
+                        width: 20px;
+                        height: 20px;
+                        background-color: $white-50;
+                        border: 2px solid $white-50;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                        position: relative;
+                    }
+
+                    input[type="checkbox"]:checked {
+                        background-color: $yellow-500;
+                        border: 2px solid $yellow-500;
+                    }
+
+                    input[type="checkbox"]:checked::before {
+                        content: "✔"; /* Галочка */
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 16px;
+                        color: #000; /* Колір галочки */
+                    }
+
+                    input[type="checkbox"]:focus {
+                        outline: none; /* Видаляє стандартний контур при фокусуванні */
+                    }
+                    a {
+                        color: $yellow-500;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
             .novelties__all-new {
                 display: flex;
                 align-items: center;
@@ -30,11 +209,22 @@
                 gap: 28px;
                 .novelties__films-item {
                     display: grid;
-                    row-gap: 8px;
                     .novelties__img {
                         width: 100%;
                         height: 484px;
                         object-fit: cover;
+                    }
+                    .novelties__name {
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        padding-top: 13px;
+                    }
+                    .novelties__data {
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 1.91;
+                        color: $yellow-500;
                     }
                 }
             }
