@@ -69,6 +69,18 @@
             color: $white-50;
         }
     }
+    .header__burger-menu {
+        display: none;
+        width: 28.6px;
+        height: 27px;
+        background-color: $white-50;
+        border: 1px solid $white-50;
+        border-radius: 5px;
+        div {
+            width: 14px;
+            border: 1px solid $blue-500;
+        }
+    }
 }
 
 
@@ -96,6 +108,8 @@
                 font-size: 14px;
                 font-weight: 700;
                 line-height: 1.6;
+                align-self: start;
+                justify-self: end;
             }
             .header__search-log {
                 display: block;
@@ -230,12 +244,32 @@
             .header__nav {
                 display: none;
             }
+            .header__search-log {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-self: start;
+                column-gap: 4px;
+                .header__search-btn_white {
+                    padding: 4.6px 5.5px;
+                    border-radius: 5px;
+                }
+            }
             .header__log-btn_blue-two {
                 padding: 6px 13px 6px 13px;
                 font-size: 10px;
                 font-weight: 700;
                 line-height: 14px;
                 border-radius: 5px;
+                align-self: start;
+                justify-self: end;
+            }
+            .header__burger-menu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 3px;
             }
         }
     } 
