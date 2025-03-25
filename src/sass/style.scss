@@ -76,6 +76,35 @@
 
 
 
+
+
+@media (max-width: 1400px) {
+    .container {
+       max-width: 1000px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 850px;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 660px;
+  }
+}
+
+
+
+
+
+
+
 @import 'blocks/header';
 @import 'blocks/cinema';
 @import 'blocks/trailer';
@@ -84,3 +113,6 @@
 @import 'blocks/news';
 @import 'blocks/novelties';
 @import 'blocks/footer';
+
+
+
