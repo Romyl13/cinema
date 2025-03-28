@@ -150,3 +150,276 @@
     }
     
 }
+
+
+
+
+@media (max-width: 1400px) {
+    .trailer {
+        margin-top: 54  px;
+    
+        .trailer__detail {
+            margin-top: 12px;
+        }
+
+        .trailer__img-film {
+            margin-top: 31px;
+        }
+
+        .trailer__all {
+            .trailer__title {
+                font-size: 40px;
+                font-weight: 900;
+                line-height: 51px;
+            }
+            .trailer__text {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+    
+        }
+    
+        .trailer__name {
+            font-size: 35px;
+            font-weight: 900;
+            line-height: 45px;
+        }
+        .trailer__blocks  {
+            column-gap: 0;
+            .trailer__social {
+                column-gap: 24px;
+            }
+        }
+    
+        .trailer__rating {
+            column-gap: 8px;
+    
+            .trailer__like {
+                row-gap: 8px;
+    
+                .trailer__like-btn {
+                    width: 39.23px;
+                    height: 39.23px;
+                    padding-bottom: 0;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            .trailer__dislike {
+                row-gap: 8px;
+                
+                .trailer__dis-btn {
+                    width: 39.23px;
+                    height: 39.23px;
+                    padding-bottom: 0;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+    
+            .trailer__text-rating {
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 13px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 850px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .trailer {
+        margin-top: 24px;
+        .container {
+            max-width: 660px;
+        }
+    
+        .trailer__detail {
+            margin-top: 8px;
+        }
+
+        .trailer__all {
+            .trailer__title {
+                font-size: 40px;
+                font-weight: 900;
+                line-height: 51px;
+            }
+            .trailer__text {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+    
+        }
+    
+        .trailer__name {
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 38px;
+        }
+        .trailer__blocks  {
+            grid-template-columns: 3fr 2fr;
+            column-gap: 0;
+            .trailer__social {
+                column-gap: 16px;
+            }
+        }
+    
+        .trailer__rating {
+            column-gap: 8px;
+    
+            .trailer__like {
+                row-gap: 8px;
+    
+                .trailer__like-btn {
+                    width: 39.23px;
+                    height: 39.23px;
+                    padding-bottom: 0;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            .trailer__dislike {
+                row-gap: 8px;
+                
+                .trailer__dis-btn {
+                    width: 39.23px;
+                    height: 39.23px;
+                    padding-bottom: 0;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+    
+            .trailer__text-rating {
+                font-size: 9px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+@media (max-width: 660px) {
+    .trailer {
+        margin-top: 54px;
+        .container {
+            max-width: 440px;
+        }
+    
+        .trailer__detail {
+            margin-top: 12px;
+        }
+
+        .trailer__img-film {
+            margin-top: 31px;
+        }
+
+        .trailer__all {
+            flex-direction: column;
+            .trailer__title {
+                font-size: 40px;
+                font-weight: 900;
+                line-height: 51px;
+            }
+            .trailer__text {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+    
+        }
+    
+        .trailer__name {
+            font-size: 35px;
+            font-weight: 900;
+            line-height: 45px;
+        }
+        .trailer__blocks  {
+            column-gap: 0;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            .trailer__social {
+                column-gap: 24px;
+            }
+        }
+    
+        .trailer__rating {
+            column-gap: 8px;
+    
+            .trailer__like {
+                row-gap: 8px;
+    
+                .trailer__like-btn {
+                    width: 39.23px;
+                    height: 39.23px;
+                    padding-bottom: 0;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            .trailer__dislike {
+                row-gap: 8px;
+                
+                .trailer__dis-btn {
+                    width: 39.23px;
+                    height: 39.23px;
+                    padding-bottom: 0;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+    
+            .trailer__text-rating {
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 13px;
+            }
+        }   
+        .trailer__films {
+            grid-template-columns: repeat(2, 1fr);
+            .trailer__item-film:nth-child(odd) {
+                display: none;
+            }
+            .trailer__item-film {
+                img {
+                    width: 184.44px;
+                    height: 131.74px;
+                }
+            }
+        }
+        .trailer__slider {
+            display: none;
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+}

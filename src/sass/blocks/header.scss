@@ -159,6 +159,9 @@
   }
 
   .header {
+    .container {
+        max-width: 850px;
+      }
     .header__wrapper {
         .header__nav {
             ul {
@@ -188,6 +191,9 @@
     }
 
     .header {
+        .container {
+            max-width: 660px;
+        }
         .header__wrapper {
             .header__nav {
                 ul {
@@ -213,6 +219,9 @@
     }
 
     .header {
+        .container {
+            max-width: 440px;
+        }    
         .header__wrapper {
             .header__nav {
                 ul {
@@ -240,6 +249,9 @@
     }
 
     .header {
+        .container {
+            max-width: 360px;
+        }
         .header__wrapper {
             .header__nav {
                 display: none;
