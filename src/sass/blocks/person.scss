@@ -1,5 +1,18 @@
 .person{
     margin-top: 65px;
+    .person__page {
+        display: none;
+    }
+    .person__burger {
+        display: none;
+        row-gap: 4px;
+        padding-top: 7px;
+        span {
+            margin: 0 auto;
+            border: 1px solid $white-50;
+            width: 16px;
+        }
+    }
     .person__wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -136,5 +149,300 @@
                 }
             }
         }
+    }
+}
+
+
+
+
+
+  @media (max-width: 1400px) {
+      .person {
+        .container {
+            max-width: 1000px;
+            padding: 0 10px;
+        }
+        .person__wrapper {
+
+
+            .person__actors-top {
+                .person__title {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 27px;
+                }
+                .person__text {
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: 20px;
+                }
+                .person__old {
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 21px;
+                }
+                .person__item-last {
+                    padding: 17px 17px 18px 19px;
+                    .person__devider {
+                        margin: 9px 0;
+                    }
+                    .person__people-top {
+                        width: 295px;
+                        height: auto;
+                        row-gap: 2px;
+                        
+                        .person__place-item {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                        }
+                        .person__name-actor {
+                            .person__ukr-name {
+                                font-size: 15px;
+                                font-weight: 700;
+                                line-height: 19px;
+                            }
+                            .person__eng-name {
+                                font-size: 11px;
+                                font-weight: 600;
+                                line-height: 13px;
+                            }
+                        }
+                        .person__old-item {
+                            .person__old-item {
+                                font-size: 11px;
+                                font-weight: 400;
+                                line-height: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+  }
+  
+  @media (max-width: 1000px) {
+
+    .person {
+        .container {
+            max-width: 850px;
+        }
+        .person__wrapper {
+
+
+            .person__actors-top {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 18px;
+                row-gap: 11px;
+                .person__title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 25px;
+                }
+                .person__text {
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 18px;
+                }
+                .person__old {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+                .person__place {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+                
+                .person__item-last {
+                    grid-column: 1 / 3;
+                    .person__people-top {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+  
+    
+  }
+  
+  
+  @media (max-width: 768px) {
+    .person {
+        .container {
+            max-width: 660px;
+        }
+        .person__page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -moz-column-gap: 19px;
+            column-gap: 19px;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 21px;
+            color: $white-50;
+            align-self: center;
+            justify-self: end;
+        }
+
+        .person__wrapper {
+            row-gap: 30px;
+            .person__popular-person {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                row-gap: 8px;
+                .person__date {
+                    align-self: center;
+                    justify-self: start;
+                }
+                .person__title {
+                    align-self: center;
+                    justify-self: start;
+                }
+            }
+
+            .person__people-top {
+                .person__item-last {
+                    .person__people-top {
+                        .person__place-item {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 18px;
+                        }
+                        .person__name-actor {
+                            .person__ukr-name {
+                                font-size: 15px;
+                                font-weight: 700;
+                                line-height: 19px;
+                            }
+                            .person__eng-name {
+                                font-size: 11px;
+                                font-weight: 600;
+                                line-height: 13px;
+                            }
+                        }
+                        .person__old-item {
+                            .person__old-item {
+                                font-size: 11px;
+                                font-weight: 400;
+                                line-height: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+@media (max-width: 660px) {
+    .person {
+        margin-top: 29px;
+        .container {
+            max-width: 440px;
+        }
+        .person__burger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .person__wrapper {
+            row-gap: 22px;
+            .person__popular-person {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .person__page {
+                    display: none;
+                }
+                .person__date {
+                    display: none;
+                }
+                .person__title {
+                    font-size: 32px;
+                    font-weight: 900;
+                    line-height: 41px;
+                }
+            }
+
+            .person__actors-top {
+                .person__place {
+                    margin: 5px 0 0 7px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 20px;
+                }
+                .person__title {
+                    margin: 0 0 48px 13px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 19px;
+                }
+                .person__text {
+                    margin: 0 0 30px 13px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    line-height: 13px;
+                }
+                .person__old {
+                    margin: 0px 0px 13px 13px;
+                    font-size: 10px;
+                    font-weight: 500;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .person {
+        .container {
+            max-width: 360px;
+        }
+    }
+
+    .person .person__wrapper .person__popular-person .person__title {
+        font-size: 28px;
+    }
+
+    .person .person__wrapper .person__actors-top .person__title {
+        margin: 0 0 30px 11px;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 17px;
+    }
+
+    .person .person__wrapper .person__actors-top .person__text {
+        margin: 0 0 20px 11px;
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 11px;
+    }
+
+    .person .person__wrapper .person__actors-top .person__old {
+        margin: 0 0 7px 11px;
+        font-size: 7px;
+        font-weight: 500;
+        line-height: 9px;
+    }
+
+    .person .person__wrapper .person__actors-top .person__place {
+        margin: 3px 0 0 6px;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 17px;
     }
 }
