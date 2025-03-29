@@ -87,6 +87,9 @@
 
 @media (max-width: 1400px) {
     .header {
+        .container {
+            padding: 0 10px;
+        }
             .header__wrapper {
             display: grid;
             align-items: center;
