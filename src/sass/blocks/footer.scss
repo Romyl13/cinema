@@ -38,3 +38,19 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .footer .footer__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 16px;
+        a {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 33px;
+        }
+    }
+}

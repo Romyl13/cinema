@@ -374,5 +374,89 @@
             grid-template-columns: repeat(2, 1fr);
             column-gap: 34px;
         }
+        .novelties__wrapper .novelties__all-new .novelties__text {
+            display: none;
+        }       
+        .novelties__wrapper .novelties__all-new {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .novelties__wrapper .novelties__all-new .novelties__title {
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 41px;
+        }
+        .novelties__wrapper .novelties__films .novelties__films-item:nth-child(odd) {
+            display: none;
+        }
+        .novelties__wrapper .novelties__wrapper-item .novelties__navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .novelties__wrapper .novelties__wrapper-item .novelties__navigation .novelties__nav {
+            display: none;
+        }
+        .novelties__wrapper .novelties__wrapper-form .novelties__subscribe-btn {
+            margin-top: 9px;
+            min-width: 100%;
+        }
+        .novelties__wrapper .novelties__wrapper-form form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .novelties__wrapper .novelties__wrapper-form .novelties__advertisement {
+            font-size: 25px;
+            font-weight: 900;
+            line-height: 32px;
+        }
+        .novelties__wrapper .novelties__wrapper-form .novelties__subtitle {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .novelties {
+        .container {
+            max-width: 360px;
+        }
+    }
+    .novelties .novelties__wrapper .novelties__wrapper-item .novelties__navigation .novelties__title {
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 45px;
+    }
+    .novelties .novelties__wrapper .novelties__wrapper-item .novelties__fees {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .novelties .novelties__wrapper .novelties__wrapper-form .novelties__advertisement {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 24px;
+    }
+    .novelties .novelties__wrapper .novelties__wrapper-form .novelties__subtitle {
+        display: none;
+    }
+    .novelties .novelties__wrapper .novelties__wrapper-form .novelties__policy {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    .novelties .novelties__wrapper .novelties__wrapper-form .novelties__subscribe-btn {
+        min-width: 200px;
+    }
+    .novelties .novelties__wrapper .novelties__wrapper-form .novelties__email {
+        padding: 19px 14px 19px 14px;
     }
 }
