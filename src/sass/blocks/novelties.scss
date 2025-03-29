@@ -55,6 +55,7 @@
                         column-gap: 10px;
                         .novelties__fees-img {
                             height: 141px;
+                            object-fit: cover;
                         }
                         .novelties__fees-wrapper {
                             display: grid;
@@ -165,17 +166,17 @@
                     }
 
                     input[type="checkbox"]:checked::before {
-                        content: "✔"; /* Галочка */
+                        content: "✔";
                         position: absolute;
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
                         font-size: 16px;
-                        color: #000; /* Колір галочки */
+                        color: #000;
                     }
 
                     input[type="checkbox"]:focus {
-                        outline: none; /* Видаляє стандартний контур при фокусуванні */
+                        outline: none;
                     }
                     a {
                         color: $yellow-500;
@@ -229,4 +230,149 @@
                 }
             }
         }
+}
+
+
+
+
+@media (max-width: 1400px) {
+    .novelties {
+        .container {
+            padding: 0 10px;
+            max-width: 1000px;
+        }
+
+        .novelties__wrapper  {
+            .novelties__films {
+                padding-top: 13px;
+                border-radius: 10px;
+                column-gap: 12px;
+                .novelties__films-item {
+                    .novelties__img {
+                        width: 202.29px;
+                        height: 275.91px;
+                    }
+                }
+            }
+            .novelties__wrapper-item {
+                padding-top: 39px;
+                .novelties__navigation {
+                    grid-template-columns: 2fr 1fr;
+                    row-gap: 8px;
+                    .novelties__devider {
+                        display: none;
+                    }
+                    .novelties__nav {
+                        align-self: center;
+                        justify-self: start;
+                    }
+                    .novelties__text_small {
+                        align-self: center;
+                        justify-self: end;
+                    }
+                }
+
+                .novelties__fees {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    row-gap: 30px;
+                    column-gap: 39px;
+                    margin-top: 25px;
+                }
+            }
+            
+            .novelties__wrapper-form {
+                margin-top: 54px;
+                form {
+                    margin-top: 20px;
+                    padding-bottom: 50px;
+                }
+                .novelties__advertisement {
+                    padding-top: 16px;
+                }
+                .novelties__logo {
+                    padding-top: 51px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .novelties {
+        .container {
+            max-width: 850px;
+        }
+
+        .novelties__wrapper {
+            .novelties__wrapper-item .novelties__fees .novelties__fees-item .novelties__fees-img {
+                width: 80px;
+                height: 118px;
+            }
+            .novelties__wrapper-item {
+                .novelties__fees {
+                    column-gap: 0px;
+                    .novelties__fees-item {
+                        column-gap: 4px;
+                        .novelties__fees-wrapper {
+                            width: 190px;
+                            .novelties__fees-name {
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 20px;
+                            }
+                            .novelties__fees-money {
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 16px;
+                            }
+                            .novelties__fees-earn {
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+}
+
+
+@media (max-width: 768px) {
+    .novelties {
+        .container {
+            max-width: 660px;
+        }
+
+        .novelties__wrapper .novelties__wrapper-form .novelties__advertisement {
+            font-size: 35px;
+            font-weight: 900;
+            line-height: 45px;
+        }
+        .novelties__wrapper .novelties__wrapper-form .novelties__subtitle {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+    }
+}
+
+
+@media (max-width: 660px) {
+    .novelties {
+        padding-top: 17px;
+        .container {
+            max-width: 440px;
+        }
+        .novelties__wrapper .novelties__wrapper-item .novelties__fees .novelties__fees-item.odd {
+            display: none;
+        }
+        .novelties__wrapper .novelties__wrapper-item .novelties__fees {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 34px;
+        }
+    }
 }
